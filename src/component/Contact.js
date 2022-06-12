@@ -17,12 +17,13 @@ export const Contact = () => {
   useEffect(()=>{
     if (!cookies.access_token) return redirect("/login")
     checkToken()
+    ambilData()
   },[])
 
 
-  useEffect(()=>{
-      ambilData()
-  },[])
+  // useEffect(()=>{
+  //     ambilData()
+  // },[])
 
 
 const ambilData = async() =>{

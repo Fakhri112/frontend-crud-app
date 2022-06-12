@@ -18,12 +18,10 @@ export const AuthUser = () => {
   useEffect(()=>{
     if (!cookies.access_token) return redirect("/login")
     checkToken()
+    ambilData()
   },[])
 
 
-  useEffect(()=>{
-      ambilData()
-  },[])
 
   const ambilData = async() =>{
     const fetch_data = await axios.get('https://backend-crud-app.herokuapp.com/contact/list-auth-user')
@@ -51,9 +49,9 @@ return <div>
         <div className="container">
         <div className="contact-width-top rounded mb-4 d-flex flex-row justify-content-between">
         <div className="p-2">
-            <h3><i>{user.nama}</i></h3>
-            <h6>{user.email}</h6>
-            <p>{user.number}</p>
+            <h3><i>{datas.nama}</i></h3>
+            <h6>{datas.email}</h6>
+            <p>{datas.number}</p>
         </div>
         <div>
             <a onClick={deleteUser} className="button-group-2 btn btn-danger btn-md mt-3" type="button">Delete Account</a>

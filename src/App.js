@@ -24,6 +24,7 @@ function App() {
         <Route path="/contact/edit/:req" element={<LostRoute />}/>
         <Route path="/contact/:req" element={<LostRoute />}/>
         <Route path="/about" element={<About />}/>
+        <Route path="/:req" element={<LostRoute />}/>
       </Routes>
     </BrowserRouter>
 

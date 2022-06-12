@@ -22,7 +22,7 @@ export const Detail = () => {
 
   useEffect(()=>{
       if (id == undefined){
-        redirect('/contact/')
+         return redirect('/contact/')
       }
       ambilData()
   },[])
