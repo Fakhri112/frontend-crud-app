@@ -21,11 +21,6 @@ export const Contact = () => {
   },[])
 
 
-  // useEffect(()=>{
-  //     ambilData()
-  // },[])
-
-
 const ambilData = async() =>{
     await axios.get('https://backend-crud-app.herokuapp.com/contact').then((x)=>{
       setData(x.data);
