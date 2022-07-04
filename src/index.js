@@ -6,10 +6,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './component/Style.css';
 
+
+
 ReactDOM.render(
   <React.StrictMode>
     <CookiesProvider>
-    <App />
+      <App />
     </CookiesProvider>
   </React.StrictMode>,
   document.getElementById('root')

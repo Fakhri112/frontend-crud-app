@@ -1,3 +1,4 @@
+/* login register */
 div.card{
     border-radius: 10px;
     border-width: 5px;
@@ -11,12 +12,26 @@ div.card{
     text-align: center;
 }
 
+.login-register-form{
+    padding: 6px;
+    border: 1px solid grey;
+    width: 500px;
+}
+
+.login-register-page{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 input.login-input{
     text-align: center;
 }
 
 .alert-auth {
-    width: 550px;
+    max-width: 500px;
+    width: 100%
 }
 
 .container-login-register {
@@ -29,8 +44,16 @@ input.login-input{
     margin-top: 30px;
 }
 
+
+
+/* menu button on the top */
+.menu-button>a{
+    width: auto;
+    font-size: 87%;
+}
+
 .contact-width-top{
-    min-width: 400px;
+    min-width: 300px;
     max-width: 600px;
     background: linear-gradient(90deg, aqua, aquamarine,greenyellow);
 }
@@ -41,4 +64,26 @@ input.login-input{
 
 .button-group-2{
     margin: 10px;
+}
+
+
+/* table data */
+.table-wrap{
+    width: 130%;
+    overflow-x: scroll;
+}
+
+
+/* detail page */
+.button-container>button{
+    margin-left: 12px;
+}
+
+
+
+/* media query for register page */
+@media only screen and (max-width: 600px) {
+  .col{
+      flex: unset !important;
+  }
 }
